@@ -1,0 +1,30 @@
+name: Auto Triage Prompts
+on:
+  pull_request:
+    paths:
+      - 'prompts/**/*.md'
+      - 'prompts.json'
+
+jobs:
+  triage:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+          
+      - name: Install dependencies
+        run: pip install tiktoken
+        
+      - name: Validate New Prompts
+        run: |
+          echo "Checking token counts for modified files..."
+          for file in $(git diff --name-only origin/main | grep 'prompts/.*\.md$'); do
+            if [ -f "$file" ]; then
+              python validation/token-counter.py "$file" || exit 1
+            fi
+          done
+          echo "Triage complete. Quality standards met!"

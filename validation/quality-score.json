@@ -1,0 +1,13 @@
+{
+    "scoring_criteria": {
+        "clarity": "Is the prompt unambiguous? (0-3)",
+        "efficiency": "Are tokens used optimally without fluff? (0-3)",
+        "robustness": "Does it handle edge cases? (0-2)",
+        "formatting": "Does it use clear markdown/sections? (0-2)"
+    },
+    "thresholds": {
+        "production_ready": 9.0,
+        "needs_review": 7.0,
+        "reject": 0.0
+    }
+}

@@ -1,0 +1,67 @@
+[
+    {
+        "name": "Antigravity/Trae Builder v9",
+        "path": "prompts/trae/builder-v9.md",
+        "tokens": 400,
+        "score": 9.8,
+        "tags": [
+            "autonomous",
+            "repo-builder",
+            "project-scaffolding"
+        ]
+    },
+    {
+        "name": "Cline Architect",
+        "path": "prompts/cline/architect.md",
+        "tokens": 420,
+        "score": 9.4,
+        "tags": [
+            "go",
+            "grpc",
+            "microservices"
+        ]
+    },
+    {
+        "name": "Copilot Workspace Creator",
+        "path": "prompts/copilot/workspace-creator.md",
+        "tokens": 310,
+        "score": 9.1,
+        "tags": [
+            "devcontainer",
+            "setup",
+            "onboarding"
+        ]
+    },
+    {
+        "name": "Cursor Composer Master",
+        "path": "prompts/cursor/composer.md",
+        "tokens": 350,
+        "score": 9.5,
+        "tags": [
+            "refactoring",
+            "multi-file",
+            "frontend"
+        ]
+    },
+    {
+        "name": "Pune Jobs Scraper",
+        "path": "prompts/originals/job-scraper.md",
+        "tokens": 300,
+        "score": 9.2,
+        "tags": [
+            "python",
+            "scraping",
+            "playwright"
+        ]
+    },
+    {
+        "name": "Windsurf Cascade Master",
+        "path": "prompts/windsurf/cascade-master.md",
+        "tokens": 380,
+        "score": 9.3,
+        "tags": [
+            "react-native",
+            "diff-manager"
+        ]
+    }
+]

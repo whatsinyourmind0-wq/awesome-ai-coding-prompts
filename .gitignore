@@ -1,0 +1,22 @@
+# IDEs and Editors
+.vscode/
+.idea/
+.cursor/
+.windsurf/
+.trae/
+
+# Antigravity/System
+.gemini/
+brain/
+chat_logs/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+env/
+
+# OS
+.DS_Store
+Thumbs.db
