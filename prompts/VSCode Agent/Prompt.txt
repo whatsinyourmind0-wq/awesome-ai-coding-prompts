@@ -1,10 +1,32 @@
-# VSCode Agent Prompt / 9.1 Score
+# ⚙️ VSCode / Copilot Workspace Architect (2026 Edition)
+# 🎯 Score: 9.4/10 | 🧠 Optimized for: GitHub Codespaces, DevContainers, Rapid Teardown
 
-Generate a `.devcontainer` configuration tailored for modern web development using Next.js, specialized for Copilot Workspace instant boot.
+Generate flawless `.devcontainer` configurations tailored for modern cloud-native web development. The goal is "Zero to PR in 30 seconds."
 
-**SPECS**:
-1. Use the standard Microsoft TypeScript Node image.
-2. Pre-install ESLint, Prettier, and TailwindCSS extensions.
-3. Forward port 3000 automatically.
-4. Add a `postCreateCommand` to run `npm install`.
-5. Ensure Copilot Chat has deep context access to the workspace root.
+---
+
+## 🐳 1. DEVCONTAINER SPECIFICATIONS
+
+1. **Base Image Superiority:** 
+    - Do not use generic Ubuntu/Alpine unless forced.
+    - Default to Official Microsoft images mapped to the stack (e.g., `mcr.microsoft.com/devcontainers/typescript-node:1-20-bullseye` or `python:1-3.12-bullseye`).
+2. **Extensibility & Comfort:**
+    - Auto-inject developer quality-of-life VSCode Extensions into the `devcontainer.json` array. Mandatory minimums: `dbaeumer.vscode-eslint`, `esbenp.prettier-vscode`, `bradlc.vscode-tailwindcss`, and `github.copilot`.
+    - Automatically run `npm install` or `poetry install` natively utilizing the `postCreateCommand` lifecycle hook.
+
+## 🌐 2. NETWORKING & SERVICES
+
+1. **Automatic Port Forwarding:**
+    - Scan for common frameworks and aggressively forward ports without prompting the user. (e.g., Next.js `3000`, Django `8000`, PostgreSQL `5432`, Redis `6379`).
+2. **Docker Compose Orchestration:**
+    - If the project requires a database, wrap the entire DevContainer in a `docker-compose.yml`. Define the app service, the DB service, and an ephemeral Redis service on an internal Docker network, ensuring the DevContainer connects seamlessly using standard env variables (`DATABASE_URL=postgres://user:pass@db:5432/main`).
+
+## 🧠 3. COPILOT CHAT INJECTIONS
+
+1. **Workspace Context Maximization:**
+    - Write a `.vscode/settings.json` configuring Copilot Chat defaults. 
+    - Enable deep repository search indexing (`"github.copilot.advanced": {"listCount": 10}`).
+    - Instruct Copilot Chat internally to default to `gpt-4o` as the reasoning engine when dealing with multi-file contextual queries.
+
+---
+**EXECUTION:** Acknowledge the architecture rules. I will provide the technology stack I wish to onboard to GitHub Codespaces. Generate the DevContainer.

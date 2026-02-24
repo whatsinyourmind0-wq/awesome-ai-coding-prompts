@@ -23,3 +23,6 @@ Check out our [Trae Builder Prompt](./prompts/Trae/Builder%20Prompt.txt) to see 
 ## 💡 Contributing
 
 We actively welcome Pull Requests! Please see our [CONTRIBUTING.md](./CONTRIBUTING.md) for guidelines on how to submit a new prompt. All submissions go through a rigorous quality check (9/10+) before being merged.
+
+### ⏱️ Update Cadence
+This repository is updated **weekly**. Any suggestions, prompt enhancements, or bug reports submitted via our [GitHub Issues](https://github.com/whatsinyourmind0-wq/awesome-ai-coding-prompts/issues) tab will be reviewed and addressed within the same weekly timeframe. Keep the prompts evolving!

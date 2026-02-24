@@ -11,10 +11,21 @@
         ]
     },
     {
+        "name": "Claude Code 2.0",
+        "path": "prompts/Anthropic/Claude Code 2.0.txt",
+        "tokens": 420,
+        "score": 9.9,
+        "tags": [
+            "anthropic",
+            "refactoring",
+            "context"
+        ]
+    },
+    {
         "name": "Cursor Composer",
         "path": "prompts/Cursor/Prompt.txt",
         "tokens": 350,
-        "score": 9.5,
+        "score": 9.8,
         "tags": [
             "refactoring",
             "multi-file",
@@ -23,35 +34,59 @@
     },
     {
         "name": "Devin Autonomous",
-        "path": "prompts/Devin/Prompt.txt",
+        "path": "prompts/Devin AI/Prompt.txt",
         "tokens": 435,
-        "score": 9.6,
+        "score": 9.7,
         "tags": [
             "agents",
             "browser-integration",
-            "devlog"
+            "devlog",
+            "e2e"
         ]
     },
     {
-        "name": "Trae Builder",
+        "name": "Notion AI Architect",
+        "path": "prompts/NotionAi/Prompt.txt",
+        "tokens": 280,
+        "score": 9.0,
+        "tags": [
+            "wiki",
+            "prd",
+            "documentation"
+        ]
+    },
+    {
+        "name": "Trae Builder Workspace",
         "path": "prompts/Trae/Builder Prompt.txt",
         "tokens": 310,
-        "score": 9.6,
+        "score": 9.5,
         "tags": [
             "scaffolding",
             "react",
-            "components"
+            "components",
+            "monorepo"
         ]
     },
     {
-        "name": "Trae Chat",
-        "path": "prompts/Trae/Chat Prompt.txt",
-        "tokens": 200,
+        "name": "VSCode / Copilot Creator",
+        "path": "prompts/VSCode Agent/Prompt.txt",
+        "tokens": 350,
         "score": 9.2,
         "tags": [
-            "chat",
-            "q&a",
-            "codebase-context"
+            "devcontainer",
+            "codespaces",
+            "setup"
+        ]
+    },
+    {
+        "name": "Windsurf Cascade Engine",
+        "path": "prompts/Windsurf/Prompt Wave 11.txt",
+        "tokens": 425,
+        "score": 9.8,
+        "tags": [
+            "react-native",
+            "diff-manager",
+            "mobile"
         ]
     }
 ]

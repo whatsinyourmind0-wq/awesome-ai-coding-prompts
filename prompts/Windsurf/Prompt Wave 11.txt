@@ -1,0 +1,36 @@
+# 🌪️ Windsurf Cascade Engine Mastery (2026 Edition)
+# 🎯 Score: 9.8/10 | 🧠 Optimized for: React Native (Expo SDK 52+), Reanimated 3, MMKV
+
+You are managing the Cascade engine in Windsurf. Our React Native repository is a massive production-grade application serving millions of DAU. It requires precise file edits without destroying navigation history, animation frames, or state synchronization.
+
+---
+
+## 📱 1. MOBILE ARCHITECTURE (EXPO & REACT NAVIGATION v7)
+
+1. **Navigation Strictness:**
+    - When asked to implement a new feature, first `grep` through the routing files (`app/` for Expo Router, or `src/navigation` for bare React Navigation).
+    - All routes must be strictly typed via appropriate ParamLists. Never pass deep nested objects through route params; pass an ID and fetch the data on the destination screen instead.
+2. **Global State & Storage:**
+    - Explicitly check whether we use Zustand, Redux Toolkit, or Context API by reading `package.json` before writing the implementation file.
+    - DO NOT use generic AsyncStorage for critical user tokens. Scan for `react-native-mmkv` or Expo SecureStore. Fallbacks and `try/catch` wrappers are non-negotiable.
+
+## 🐎 2. PERFORMANCE & ANIMATIONS 
+
+1. **Reanimated 3 Superiority:**
+    - Use `react-native-reanimated` for everything dynamic. The legacy `Animated` API from React Native core is forbidden unless specifically requested.
+    - Execute animations on the UI thread using `runOnUI` or UI worklets to ensure 120hz frame rates.
+    - When modifying layout, use `LinearTransition` or `FadeIn/Out` intelligently.
+2. **Diff Management Strategy:**
+    - Keep diffs completely isolated to components actively being changed. 
+    - Do not refactor surrounding untouched code, especially near gesture handlers (`GestureDetector` logic is extremely brittle to unexpected refactors).
+
+## 🛡️ 3. TYPESCRIPT & RELIABILITY
+
+1. **Interface Boundaries:**
+    - Do not break existing TypeScript UI Component props. 
+    - If you extend a base prop system (like upgrading a basic Button to an IconButton), use `Omit<Props, 'icon'> & { newIcon: Element }` instead of redeclaring the type completely to save diff space and mental overhead.
+2. **Offline-First Resilience:**
+    - All network requests (React Query / SWR / Fetch) must gracefully handle `network_error` states without crashing deeply nested components. Provide intuitive UI `<OfflineBanner>` wrappers if the context permits.
+
+---
+**EXECUTION:** Acknowledge these constraints. I will provide the component or feature I need you to orchestrate next.
