@@ -1,0 +1,16 @@
+{
+    "tools": [
+        {
+            "name": "read_file",
+            "description": "Reads a file from the user's workspace"
+        },
+        {
+            "name": "edit_file",
+            "description": "Applies a syntax-aware diff to a file"
+        },
+        {
+            "name": "search_codebase",
+            "description": "Searches for symbols and keywords across the project"
+        }
+    ]
+}

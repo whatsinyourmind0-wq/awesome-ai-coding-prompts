@@ -1,7 +1,7 @@
 [
     {
-        "name": "Antigravity/Trae Builder v9",
-        "path": "prompts/trae/builder-v9.md",
+        "name": "Antigravity Fast Prompt",
+        "path": "prompts/Antigravity/Fast Prompt.txt",
         "tokens": 400,
         "score": 9.8,
         "tags": [
@@ -11,30 +11,8 @@
         ]
     },
     {
-        "name": "Cline Architect",
-        "path": "prompts/cline/architect.md",
-        "tokens": 420,
-        "score": 9.4,
-        "tags": [
-            "go",
-            "grpc",
-            "microservices"
-        ]
-    },
-    {
-        "name": "Copilot Workspace Creator",
-        "path": "prompts/copilot/workspace-creator.md",
-        "tokens": 310,
-        "score": 9.1,
-        "tags": [
-            "devcontainer",
-            "setup",
-            "onboarding"
-        ]
-    },
-    {
-        "name": "Cursor Composer Master",
-        "path": "prompts/cursor/composer.md",
+        "name": "Cursor Composer",
+        "path": "prompts/Cursor/Prompt.txt",
         "tokens": 350,
         "score": 9.5,
         "tags": [
@@ -44,24 +22,36 @@
         ]
     },
     {
-        "name": "Pune Jobs Scraper",
-        "path": "prompts/originals/job-scraper.md",
-        "tokens": 300,
-        "score": 9.2,
+        "name": "Devin Autonomous",
+        "path": "prompts/Devin/Prompt.txt",
+        "tokens": 435,
+        "score": 9.6,
         "tags": [
-            "python",
-            "scraping",
-            "playwright"
+            "agents",
+            "browser-integration",
+            "devlog"
         ]
     },
     {
-        "name": "Windsurf Cascade Master",
-        "path": "prompts/windsurf/cascade-master.md",
-        "tokens": 380,
-        "score": 9.3,
+        "name": "Trae Builder",
+        "path": "prompts/Trae/Builder Prompt.txt",
+        "tokens": 310,
+        "score": 9.6,
         "tags": [
-            "react-native",
-            "diff-manager"
+            "scaffolding",
+            "react",
+            "components"
+        ]
+    },
+    {
+        "name": "Trae Chat",
+        "path": "prompts/Trae/Chat Prompt.txt",
+        "tokens": 200,
+        "score": 9.2,
+        "tags": [
+            "chat",
+            "q&a",
+            "codebase-context"
         ]
     }
 ]

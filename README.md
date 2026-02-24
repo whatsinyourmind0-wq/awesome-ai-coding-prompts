@@ -7,7 +7,7 @@
 Welcome to the **production-grade** repository for AI coding prompts. All prompts are strictly curated, token-counted, and sorted **alphabetically by tool** to guarantee maximum usability.
 
 🔥 **Why this over [x1xhlol's 56K⭐ dump](https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools/)?**
-Because we value **Quality (9/10+) over Quantity**. No more raw dumps. Only proven, high-converting, and efficient prompts.
+This repository matches the exact **x1xhlol folder navigation structure** (Tool/Prompt.txt) that you already know and love, but adds massive value: Because we value **Quality (9/10+) over Quantity**. No more raw dumps. Only proven, high-converting, and efficient prompts.
 
 ## 📊 The Comparison
 
