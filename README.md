@@ -6,19 +6,11 @@
 
 Welcome to the **production-grade** repository for AI coding prompts. All prompts are strictly curated, token-counted, and sorted **alphabetically by tool** to guarantee maximum usability.
 
-🔥 **Why this over [x1xhlol's 56K⭐ dump](https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools/)?**
-This repository matches the exact **x1xhlol folder navigation structure** (Tool/Prompt.txt) that you already know and love, but adds massive value: Because we value **Quality (9/10+) over Quantity**. No more raw dumps. Only proven, high-converting, and efficient prompts.
-
-## 📊 The Comparison
-
-| Feature | x1xhlol Dump 📦 | Awesome AI Coding Prompts 💎 |
-|---------|----------------|------------------------------|
-| **Quality** | Random raw dumps | Curated, tested, 9/10+ only |
-| **Token Efficiency** | Unknown | Token-counted & optimized |
-| **Database** | None | JSON Searchable DB |
-| **Automation** | Manual | Auto-triaged via GitHub Actions |
+Our philosophy is **Quality over Quantity**. Every prompt in this repository has been tested in real-world scenarios and is designed to yield consistent, high-quality code generation.
 
 ## 📂 Structure
+
+The repository is organized elegantly by tool and platform. Inside each directory, you will find clean `.txt` files containing the prompts, and sometimes JSON files defining the tool calls.
 
 - `/prompts`: The curated list of prompts by AI tool.
 - `/validation`: Scripts to measure token count and quality scores.
@@ -26,6 +18,8 @@ This repository matches the exact **x1xhlol folder navigation structure** (Tool/
 
 ## 🚀 Get Started
 
-Check out our [Trae Builder v9](./prompts/trae/builder-v9.md) to see how Antigravity handles 100% structure/content/automation.
+Check out our [Trae Builder Prompt](./prompts/Trae/Builder%20Prompt.txt) to see how an autonomous agent handles 100% of structure, content, and automation.
 
-Contribute and push us to Month 1: 1.2K⭐!
+## 💡 Contributing
+
+We actively welcome Pull Requests! Please see our [CONTRIBUTING.md](./CONTRIBUTING.md) for guidelines on how to submit a new prompt. All submissions go through a rigorous quality check (9/10+) before being merged.

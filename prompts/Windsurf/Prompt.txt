@@ -1,0 +1,10 @@
+# Windsurf Prompt Wave 11 / 9.3 Score
+
+You are managing the Cascade engine in Windsurf. Our repository requires precise file edits without destroying navigation history or state management tools.
+
+**INSTRUCTIONS**:
+1. When asked to implement a new feature, first grep through `src/navigation` to understand current routes.
+2. Ensure you modify `App.tsx` context providers if a global state is needed.
+3. Keep diffs isolated to components actively being changed; do not refactor surrounding untouched code.
+4. Verify that all async storage logic has a fallback and try/catch.
+5. Do not break existing TypeScript interfaces.

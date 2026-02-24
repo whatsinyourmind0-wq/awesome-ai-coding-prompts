@@ -1,0 +1,10 @@
+# VSCode Agent Prompt / 9.1 Score
+
+Generate a `.devcontainer` configuration tailored for modern web development using Next.js, specialized for Copilot Workspace instant boot.
+
+**SPECS**:
+1. Use the standard Microsoft TypeScript Node image.
+2. Pre-install ESLint, Prettier, and TailwindCSS extensions.
+3. Forward port 3000 automatically.
+4. Add a `postCreateCommand` to run `npm install`.
+5. Ensure Copilot Chat has deep context access to the workspace root.
